@@ -1,0 +1,45 @@
+---
+import "mvp.css/mvp.css";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <header>
+    <nav>
+      <a href="/"><p>Angel Baez</p></a>
+    </nav>
+    <h1 class="text-gradient">Making the web a safer and greater place.</h1>
+    <p>
+      If you're looking for a developer with an entrepreneurial spirit and
+      life-long learning mindset, <mark>you're in the right place</mark>.
+    </p>
+    <br />
+    <p>
+      <a href="mailto:a@baezor.io"><i>Let's talk!</i></a>
+    </p>
+  </header>
+
+  <footer>
+    <hr />
+    <p>
+      <small>Angel Baez |</small>
+      <small><a href="mailto:a@baezor.io">a@baezor.io</a></small>
+    </p>
+  </footer>
+</Layout>
+
+<style>
+  :root {
+    --astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
+  }
+  .text-gradient {
+    font-weight: 900;
+    background-image: var(--astro-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 200%;
+    background-position-y: 100%;
+    border-radius: 0.4rem;
+    animation: pulse 4s ease-in-out infinite;
+  }
+</style>
