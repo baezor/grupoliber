@@ -1,48 +1,25 @@
 ---
-import "mvp.css/mvp.css";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Angel Baez">
-  <header>
-    <nav>
-      <a href="/"><p>Angel Baez</p></a>
-    </nav>
+  <div class="container">
     <h5><em>vitam impendere vero = to pay his life for the truth</em></h5>
-    <h1 class="text-gradient">Developer, entrepreneur and tacos connoisseur</h1>
+    <h1>Developer, entrepreneur and tacos connoisseur</h1>
     <p>
       If you're looking for a developer with an entrepreneurial spirit and
       life-long learning mindset, <mark>you're in the right place</mark>.
     </p>
     <br />
     <p>
-      <a href="mailto:a@baezor.io"><i>Let's talk! ↗</i></a>
-      <a href="https://github.com/baezor" target="_blank"><b>Github ↗</b></a>
-      <a href="https://twitter.com/baezor" target="_blank"><i>Twitter ↗</i></a>
+      <a href="/about"><i>About</i></a>
+      <a href="/contact"><i>Contact Me</i></a>
     </p>
-  </header>
-
-  <footer>
-    <hr />
-    <p>
-      <small>Angel Baez |</small>
-      <small><a href="mailto:a@baezor.io">a@baezor.io</a></small>
-    </p>
-  </footer>
+  </div>
 </Layout>
 
 <style>
-  :root {
-    --astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
-  }
-  .text-gradient {
-    font-weight: 900;
-    background-image: var(--astro-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 100% 200%;
-    background-position-y: 100%;
-    border-radius: 0.4rem;
-    animation: pulse 4s ease-in-out infinite;
+  .container {
+    text-align: center;
   }
 </style>
