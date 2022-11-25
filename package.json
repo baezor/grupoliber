@@ -1,5 +1,5 @@
 {
-  "name": "@example/basics",
+  "name": "@baezor/baezor-io",
   "type": "module",
   "version": "0.0.1",
   "private": true,
@@ -7,11 +7,15 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "wrangler pages dev ./dist --compatibility-date=2022-11-23",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^1.2.3",
+    "@astrojs/cloudflare": "^4.0.1",
+    "astro": "^1.6.10",
     "mvp.css": "^1.10.2"
+  },
+  "devDependencies": {
+    "wrangler": "^2.4.4"
   }
 }

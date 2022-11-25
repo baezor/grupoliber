@@ -1,0 +1,3 @@
+name = "baezor-worker"
+main = "functions"
+compatibility_date = "2022-11-23"

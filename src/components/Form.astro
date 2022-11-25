@@ -1,0 +1,55 @@
+<form id="form">
+  <label for="name">Your name:</label>
+  <input id="name" type="text" name="name" placeholder="Your name" required />
+  <label for="email">Email:</label>
+  <input id="email" type="email" name="email" placeholder="Email" required />
+  <label for="hobby">Write your message here:</label>
+  <textarea
+    name="message"
+    id="message"
+    cols="28"
+    rows="3"
+    placeholder="Hi Angel, I don't like your website, but I would like to know more about tacos"
+    required></textarea>
+  <button type="submit" id="show">Submit</button>
+</form>
+
+<style>
+  form input[type="email"] {
+    width: calc(100% - 1.6rem);
+  }
+  form textarea {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+</style>
+<script>
+  /**
+   *  URL for local test: http://127.0.0.1:8788/api/contact/
+   */
+  const URL = window.location.origin + "/api/contact/";
+  console.log("url: ", URL);
+  const form = document.getElementById("form") as HTMLFormElement;
+  const name = document.getElementById("name") as HTMLInputElement;
+  const email = document.getElementById("email") as HTMLInputElement;
+  const message = document.getElementById("message") as HTMLTextAreaElement;
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    // get current URL
+    console.log("submitting form...");
+    const response = await fetch(URL, {
+      mode: "cors",
+      method: "POST",
+      headers: {},
+      body: JSON.stringify({
+        name: name.value,
+        email: email.value,
+        message: message.value,
+      }),
+    });
+    const json = await response.json();
+    console.log(json);
+  });
+</script>
