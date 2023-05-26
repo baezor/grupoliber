@@ -1,5 +1,5 @@
 ---
-import "mvp.css/mvp.css";
+import "../styles/main.css";
 export interface Props {
   title: string;
 }
@@ -17,28 +17,15 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="/"><p>Angel Baez</p></a>
-        <ul>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li>
-            <a href="https://www.linkedin.com/in/baezor/" target="_blank"
-              >LinkedIn ↗</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
     <main>
       <slot />
     </main>
     <footer>
-      <hr />
       <p>
-        <small>Angel Baez |</small>
-        <small>&copy; 2022</small>
+        <small
+          >GRUPO LIBER SOLUCIONES TECNOLOGICAS Y DE EDUCACION MEXICO |</small
+        >
+        <small> Todos los derechos reservados &copy; 2023</small>
       </p>
     </footer>
   </body>

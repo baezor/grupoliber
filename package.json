@@ -1,5 +1,5 @@
 {
-  "name": "@baezor/baezor-io",
+  "name": "@baezor/grupoliber",
   "type": "module",
   "version": "0.0.1",
   "private": true,
@@ -12,8 +12,7 @@
   },
   "dependencies": {
     "@astrojs/cloudflare": "^4.0.1",
-    "astro": "^1.6.10",
-    "mvp.css": "^1.10.2"
+    "astro": "^1.6.10"
   },
   "devDependencies": {
     "wrangler": "^2.4.4"

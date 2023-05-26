@@ -1,25 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import logo from "/grupoliber-white.svg";
 ---
 
-<Layout title="Angel Baez">
-  <div class="container">
-    <h5><em>vitam impendere vero = to pay his life for the truth</em></h5>
-    <h1>Developer, entrepreneur and tacos connoisseur</h1>
-    <p>
-      If you're looking for a developer with an entrepreneurial spirit and
-      life-long learning mindset, <mark>you're in the right place</mark>.
-    </p>
-    <br />
-    <p>
-      <a href="/about"><i>About</i></a>
-      <a href="/contact"><i>Contact Me</i></a>
-    </p>
+<Layout title="Grupo LIBER">
+  <div class="logo">
+    <img src={logo} width="280" alt="Grupo LIBER" />
   </div>
 </Layout>
-
-<style>
-  .container {
-    text-align: center;
-  }
-</style>

@@ -4,7 +4,7 @@ import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://baezor.io",
+  site: "https://grupoliber.com.mx",
   output: "server",
   adapter: cloudflare({ mode: "directory" }),
 });
